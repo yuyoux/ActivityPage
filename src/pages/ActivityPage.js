@@ -60,7 +60,7 @@ class ActivitiesSheet extends React.Component {
                   container
                   spacing={0}
                   justify="center"
-                  style={{ width: "95%" }}
+                  style={{ width: "85%" }}
                 >
                   <List records={this.props.records} />
                 </Grid>

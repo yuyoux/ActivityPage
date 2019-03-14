@@ -67,7 +67,7 @@ class ResultSelector extends React.Component {
     return (
       <div className={classes.root}>
         <Hidden only={["sm", "xs"]}>
-          <Grid container spacing={0} justify="center" style={{ width: "95%" }}>
+          <Grid container spacing={0} justify="center" style={{ width: "85%" }}>
             <Grid
               item
               xs={6}
