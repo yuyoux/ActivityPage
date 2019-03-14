@@ -33,23 +33,24 @@ class ActivitiesSheet extends React.Component {
       <div>
         <Halo name={"Activity"} />
         <CurrencyBar />
-        <Hidden only={["sm", "xs"]}>
-          <ResultSelector />
-        </Hidden>
         <div className={classes.root}>
+          <Hidden only={["sm", "xs"]}>
+            <ResultSelector />
+          </Hidden>
+
           <Hidden only={["lg", "md"]}>
             <Grid
               container
               spacing={0}
               justify="center"
-              style={{ width: "95%" }}
+              style={{ width: "85%" }}
             >
               <ResultSelectorForSmall />
             </Grid>
           </Hidden>
         </div>
 
-        <div>
+        <div className={classes.control}>
           {this.props.records.length === 0 ? (
             <CircularProgress />
           ) : (
